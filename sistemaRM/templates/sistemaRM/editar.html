@@ -1,0 +1,17 @@
+
+{% extends 'sistemaRM/layout.html' %}
+{% block title %}
+	<title>Editar</title>			
+{% endblock %}
+{% block body %}
+<div class="container text-center">
+	<form method="post">
+		{% csrf_token %}
+		<div class="form-group">
+			{{ form }}
+		</div>
+		<button type="submit" class="btn btn-primary">Editar</button>
+	</form>	
+</div>
+			
+{% endblock %}
